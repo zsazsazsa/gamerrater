@@ -1,0 +1,92 @@
+[
+    {
+        "model": "raterapi.playerimage",
+        "pk": 1,
+        "fields": {
+            "player": 1,
+            "game": 1,
+            "img_url": "https://example.com/images/catan_image_1.jpg"
+        }
+    },
+    {
+        "model": "raterapi.playerimage",
+        "pk": 2,
+        "fields": {
+            "player": 1,
+            "game": 2,
+            "img_url": "https://example.com/images/carcassonne_image_1.jpg"
+        }
+    },
+    {
+        "model": "raterapi.playerimage",
+        "pk": 3,
+        "fields": {
+            "player": 2,
+            "game": 3,
+            "img_url": "https://example.com/images/ticket_to_ride_image_1.jpg"
+        }
+    },
+    {
+        "model": "raterapi.playerimage",
+        "pk": 4,
+        "fields": {
+            "player": 2,
+            "game": 4,
+            "img_url": "https://example.com/images/pandemic_image_1.jpg"
+        }
+    },
+    {
+        "model": "raterapi.playerimage",
+        "pk": 5,
+        "fields": {
+            "player": 1,
+            "game": 5,
+            "img_url": "https://example.com/images/7_wonders_image_1.jpg"
+        }
+    },
+    {
+        "model": "raterapi.playerimage",
+        "pk": 6,
+        "fields": {
+            "player": 2,
+            "game": 6,
+            "img_url": "https://example.com/images/dominion_image_1.jpg"
+        }
+    },
+    {
+        "model": "raterapi.playerimage",
+        "pk": 7,
+        "fields": {
+            "player": 1,
+            "game": 7,
+            "img_url": "https://example.com/images/splendor_image_1.jpg"
+        }
+    },
+    {
+        "model": "raterapi.playerimage",
+        "pk": 8,
+        "fields": {
+            "player": 2,
+            "game": 8,
+            "img_url": "https://example.com/images/azul_image_1.jpg"
+        }
+    },
+    {
+        "model": "raterapi.playerimage",
+        "pk": 9,
+        "fields": {
+            "player": 1,
+            "game": 9,
+            "img_url": "https://example.com/images/wingspan_image_1.jpg"
+        }
+    },
+    {
+        "model": "raterapi.playerimage",
+        "pk": 10,
+        "fields": {
+            "player": 2,
+            "game": 10,
+            "img_url": "https://example.com/images/gloomhaven_image_1.jpg"
+        }
+    }
+]

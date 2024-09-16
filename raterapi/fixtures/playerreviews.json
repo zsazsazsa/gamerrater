@@ -1,0 +1,92 @@
+[
+    {
+        "model": "raterapi.playerreview",
+        "pk": 1,
+        "fields": {
+            "player": 1,
+            "game": 1,
+            "review": "Catan is an amazing game with great replayability. I love the trading mechanics!"
+        }
+    },
+    {
+        "model": "raterapi.playerreview",
+        "pk": 2,
+        "fields": {
+            "player": 1,
+            "game": 2,
+            "review": "Carcassonne is simple yet engaging. The tile-placement strategy is fun."
+        }
+    },
+    {
+        "model": "raterapi.playerreview",
+        "pk": 3,
+        "fields": {
+            "player": 2,
+            "game": 3,
+            "review": "Ticket to Ride is a great family game. It’s fun and easy to pick up."
+        }
+    },
+    {
+        "model": "raterapi.playerreview",
+        "pk": 4,
+        "fields": {
+            "player": 2,
+            "game": 4,
+            "review": "Pandemic is a tense cooperative game. You really feel the pressure as diseases spread!"
+        }
+    },
+    {
+        "model": "raterapi.playerreview",
+        "pk": 5,
+        "fields": {
+            "player": 1,
+            "game": 5,
+            "review": "7 Wonders is an excellent card-drafting game with so many strategies to explore."
+        }
+    },
+    {
+        "model": "raterapi.playerreview",
+        "pk": 6,
+        "fields": {
+            "player": 2,
+            "game": 6,
+            "review": "Dominion is a classic deck-building game. Highly recommend for strategy lovers."
+        }
+    },
+    {
+        "model": "raterapi.playerreview",
+        "pk": 7,
+        "fields": {
+            "player": 1,
+            "game": 7,
+            "review": "Splendor is quick and satisfying. A great game for short sessions."
+        }
+    },
+    {
+        "model": "raterapi.playerreview",
+        "pk": 8,
+        "fields": {
+            "player": 2,
+            "game": 8,
+            "review": "Azul is a beautifully designed game with satisfying mechanics."
+        }
+    },
+    {
+        "model": "raterapi.playerreview",
+        "pk": 9,
+        "fields": {
+            "player": 1,
+            "game": 9,
+            "review": "Wingspan is a unique game with an interesting theme. Perfect for bird lovers!"
+        }
+    },
+    {
+        "model": "raterapi.playerreview",
+        "pk": 10,
+        "fields": {
+            "player": 2,
+            "game": 10,
+            "review": "Gloomhaven is the ultimate cooperative dungeon crawl. The campaign system is brilliant!"
+        }
+    }
+]

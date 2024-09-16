@@ -1,0 +1,132 @@
+[
+    {
+        "model": "raterapi.game",
+        "pk": 1,
+        "fields": {
+            "title": "Catan",
+            "description": "A popular strategy game about settling and trading.",
+            "designer": "Klaus Teuber",
+            "year_released": 1995,
+            "number_of_players": 4,
+            "estimated_time": 90,
+            "age_recommendation": 10
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 2,
+        "fields": {
+            "title": "Carcassonne",
+            "description": "A tile-based game where players build medieval cities.",
+            "designer": "Klaus-Jürgen Wrede",
+            "year_released": 2000,
+            "number_of_players": 5,
+            "estimated_time": 60,
+            "age_recommendation": 8
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 3,
+        "fields": {
+            "title": "Ticket to Ride",
+            "description": "A railway-themed board game where players collect train cards to claim railway routes.",
+            "designer": "Alan R. Moon",
+            "year_released": 2004,
+            "number_of_players": 5,
+            "estimated_time": 60,
+            "age_recommendation": 8
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 4,
+        "fields": {
+            "title": "Pandemic",
+            "description": "A cooperative game where players work together to stop the spread of global diseases.",
+            "designer": "Matt Leacock",
+            "year_released": 2008,
+            "number_of_players": 4,
+            "estimated_time": 45,
+            "age_recommendation": 8
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 5,
+        "fields": {
+            "title": "7 Wonders",
+            "description": "A card-drafting game where players build their own civilization over three ages.",
+            "designer": "Antoine Bauza",
+            "year_released": 2010,
+            "number_of_players": 7,
+            "estimated_time": 30,
+            "age_recommendation": 10
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 6,
+        "fields": {
+            "title": "Dominion",
+            "description": "A deck-building game where players collect cards to build their kingdom.",
+            "designer": "Donald X. Vaccarino",
+            "year_released": 2008,
+            "number_of_players": 4,
+            "estimated_time": 30,
+            "age_recommendation": 12
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 7,
+        "fields": {
+            "title": "Splendor",
+            "description": "A game of chip-collecting and card development set during the Renaissance.",
+            "designer": "Marc André",
+            "year_released": 2014,
+            "number_of_players": 4,
+            "estimated_time": 30,
+            "age_recommendation": 10
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 8,
+        "fields": {
+            "title": "Azul",
+            "description": "A tile-placement game where players compete to decorate the walls of the Royal Palace of Evora.",
+            "designer": "Michael Kiesling",
+            "year_released": 2017,
+            "number_of_players": 4,
+            "estimated_time": 45,
+            "age_recommendation": 8
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 9,
+        "fields": {
+            "title": "Wingspan",
+            "description": "A card-driven, engine-building game about bird watching.",
+            "designer": "Elizabeth Hargrave",
+            "year_released": 2019,
+            "number_of_players": 5,
+            "estimated_time": 70,
+            "age_recommendation": 10
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 10,
+        "fields": {
+            "title": "Gloomhaven",
+            "description": "A cooperative, campaign-based dungeon-crawling game.",
+            "designer": "Isaac Childres",
+            "year_released": 2017,
+            "number_of_players": 4,
+            "estimated_time": 120,
+            "age_recommendation": 14
+        }
+    }
+]
