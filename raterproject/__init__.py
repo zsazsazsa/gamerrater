@@ -1,1 +1,0 @@
-from raterapi.views import UserViewSet

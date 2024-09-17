@@ -1,9 +1,12 @@
-import { NavLink, useNavigate } from "react-router-dom"
+import { Link, NavLink, useNavigate } from "react-router-dom"
 
 export const NavBar = () => {
     const navigate = useNavigate()
     return (
         <ul className="navbar pb-10">
+            <li className="navbar-item">
+                <Link className="navbar-link orange" to="/games">Games</Link>
+            </li>
             {
                 (localStorage.getItem("gamer_token") !== null) ?
                     <li className="navbar__item">
