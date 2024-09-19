@@ -20,7 +20,8 @@ export const Login = () => {
             .then(res => res.json())
             .then(authInfo => {
                 if (authInfo.valid) {
-                    localStorage.setItem("gamer_token", JSON.stringify(authInfo))
+                    localStorage.setItem("gamer_token", JSON.stringify(authInfo.token))
+                    localStorage.setItem("user_id", JSON.stringify(authInfo.user_id))
                     navigate("/")
                 } else {
                     existDialog.current.showModal()

@@ -42,6 +42,7 @@ class GameView(ViewSet):
         game.number_of_players = request.data['number_of_players']
         game.estimated_time = request.data['estimated_time']
         game.age_recommendation = request.data['age_recommendation']
+        game.created_by = self.request.user
         game.save()
 
         # Handle the many-to-many categories
@@ -54,6 +55,51 @@ class GameView(ViewSet):
 
         return Response(serialized.data, status=status.HTTP_201_CREATED)
 
+    def update(self, request, pk=None):
+        try:
+
+            game = Game.objects.get(pk=pk)
+
+            # Is the authenticated user allowed to edit this book?
+            self.check_object_permissions(request, game)
+
+            serializer = GameSerializer(data=request.data)
+            if serializer.is_valid():
+                game.title = serializer.validated_data['title']
+                game.description = serializer.validated_data['description']
+                game.designer = serializer.validated_data['designer']
+                game.year_released = serializer.validated_data['year_released']
+                game.number_of_players = serializer.validated_data['number_of_players']
+                game.estimated_time = serializer.validated_data['estimated_time']
+                game.age_recommendation = serializer.validated_data['age_recommendation']
+                game.created_by = self.request.user
+                game.save()
+
+
+                if 'categories' in request.data:
+                # Clear existing categories
+                    game.categories.clear()
+                    
+                    # Extract category IDs if full category objects are provided
+                    category_ids = [category['id'] for category in request.data['categories']]
+                    
+                    # Add new categories
+                    for category_id in category_ids:
+                        try:
+                            category = Category.objects.get(id=category_id)
+                            game.categories.add(category)
+                        except Category.DoesNotExist:
+                            return Response(status=status.HTTP_400_BAD_REQUEST, data={"error": f"Category with ID {category_id} does not exist."})
+                
+                game.save()
+
+                serializer = GameSerializer(game, context={'request': request})
+                return Response(None, status.HTTP_204_NO_CONTENT)
+
+            return Response(serializer.errors, status.HTTP_400_BAD_REQUEST)
+
+        except Game.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
 
         
 class GameCategorySerializer(serializers.ModelSerializer):
@@ -61,7 +107,7 @@ class GameCategorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Category
-        fields = ( 'title', )
+        fields = ( 'id', 'title', )
         
 class GameSerializer(serializers.ModelSerializer): 
 
@@ -69,5 +115,5 @@ class GameSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Game
-        fields = ( 'id', 'title', 'description', 'designer', 'year_released', 'number_of_players', 'estimated_time', 'age_recommendation', 'categories' )
+        fields = ( 'id', 'title', 'description', 'designer', 'year_released', 'number_of_players', 'estimated_time', 'age_recommendation','created_by', 'categories' )
         
